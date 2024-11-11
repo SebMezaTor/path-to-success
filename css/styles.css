@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
+    background-color: #484FB7;
 }
 
 ol, ul {
@@ -70,3 +71,27 @@ table {
 }
 
 /* ---------- GLOBAL STYLES ---------- */
+
+h1, h2 {
+    font-family: 'Kavoon';
+    color: #ffffff
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.15em;
+}
+
+
+
