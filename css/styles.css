@@ -132,12 +132,13 @@ header, h1 {
 text-align: center;
 margin: 0;
 
+
 }
 
 header {
     background-color: #6B8FE7;
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 23px;
     height: 150px;
 
     
@@ -148,10 +149,18 @@ header p {
     background-color: #D9526F;
     margin: 0px;
     
+    
 }
 
 table, th, td {
     border: 1px solid;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 25px;
+    margin: 15px;
 }
 
 
