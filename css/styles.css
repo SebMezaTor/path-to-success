@@ -38,6 +38,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     background-color: #484FB7;
+    
 }
 
 ol, ul {
@@ -92,6 +93,61 @@ h3 {
 h4 {
     font-size: 1.15em;
 }
+
+nav h2 {
+    visibility: hidden;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #E9BB57;
+    
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+
+header, h1 {
+text-align: center;
+margin: 0;
+
+}
+
+header {
+    background-color: #6B8FE7;
+    padding: 10px;
+    
+}
+
+header p {
+    color: white;
+    background-color: #D9526F;
+    margin: 0px;
+}
+
+
+
+
+
+/* --------- Small - min-width: 450px Media Query ---------- */
+
+
+/* ---------- Medium - min-width: 620px Media Query --------- */
+
+/* ---------- Large - min-width: 950px Media Query ---------- */
+
+/* ---------- XL - min-width: 1280px Media Query ----------- */
 
 
 
