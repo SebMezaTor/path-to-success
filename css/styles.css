@@ -88,14 +88,21 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    color: #E9BB57;
+    display: inline-block;
+    padding: 10px;
 }
 
 h4 {
     font-size: 1.15em;
+    /* Note to myself: I made this h4 tag white so I can see where it is when I begin making the card for the personal development. I will change it to its correct color when I am finished. */
+    color: #ffffff
+
 }
 
 nav h2 {
     visibility: hidden;
+    font-size: 1.5em;
 }
 
 nav {
@@ -103,6 +110,7 @@ nav {
     top: 0;
     right: 0;
     background-color: #E9BB57;
+    border-radius: 15px;
     
 }
 
@@ -116,6 +124,7 @@ nav a {
     text-decoration: none;
     color: black;
     padding: 10px 15px;
+    font-size: 15px;
 }
 
 header, h1 {
@@ -126,7 +135,10 @@ margin: 0;
 
 header {
     background-color: #6B8FE7;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    height: 150px;
+
     
 }
 
@@ -134,6 +146,7 @@ header p {
     color: white;
     background-color: #D9526F;
     margin: 0px;
+    
 }
 
 
