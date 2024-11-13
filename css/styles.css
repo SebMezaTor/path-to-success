@@ -196,6 +196,42 @@ footer {
     padding: 15px;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+ #approach {
+    background-color: #4CA7C0;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#proven-results {
+    background-color: #6B8FE7;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#supportive {
+    background-color: #E9BB57;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#flexible {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 30px;
+}
+
 
 
 
