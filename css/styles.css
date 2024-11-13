@@ -38,6 +38,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     background-color: #484FB7;
+    margin: 0 auto;
     
 }
 
@@ -200,7 +201,7 @@ ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -230,6 +231,31 @@ ul {
     border: 1px solid;
     border-radius: 10px;
     padding: 30px;
+}
+
+.first-step {
+    background-color: #D9526F;
+    color: white;
+    border-radius: 15px;
+    
+}
+
+
+th {
+    background-color: #E9BB57;
+}
+
+td:nth-child(odd) {
+    border-bottom: 1px solid #E9BB57;
+
+}
+
+td {
+    background-color: #ffffff;
+}
+
+table, td {
+    border: 1px solid #E9BB57;
 }
 
 
