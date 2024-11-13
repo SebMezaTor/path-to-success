@@ -262,6 +262,12 @@ table, td {
     border: 1px solid #E9BB57;
 }
 
+#pricing {
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 
 
