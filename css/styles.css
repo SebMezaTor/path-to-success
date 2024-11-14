@@ -1,3 +1,12 @@
+/* ---------- CSS BY NAME -----------*/
+/* Sebastian Meza-Torres 
+   GIT 337 */
+
+
+
+
+
+
 /* ----------- IMPORTED FONTS ----------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
@@ -39,6 +48,7 @@ body {
     line-height: 1;
     background-color: #484FB7;
     margin: 0 auto;
+
     
 }
 
@@ -207,7 +217,7 @@ ul {
     justify-content: space-between;
 
 }
-
+/* Why choose us listed items */
  #approach {
     background-color: #4CA7C0;
     border: 1px solid;
@@ -266,6 +276,53 @@ table, td {
     display: flex;
     flex-direction: row;
 }
+
+/* For the our services section */
+#our-services {
+    display: grid;
+
+    
+}
+
+#one-on-one {
+    display: grid;
+    
+    
+    
+    
+}
+
+.service-type {
+    display: grid;
+    grid-row: 4;
+    
+    
+}
+
+#group-coaching {
+    display: grid;
+    grid-column: 2;
+    
+
+    
+    
+}
+
+#workshop-seminars {
+    display: grid;
+
+    
+    
+}
+
+#online-courses {
+    display: grid;
+
+    
+
+}
+
+
 
 
 
