@@ -1,6 +1,6 @@
 /* ---------- CSS BY NAME -----------*/
-/* Sebastian Meza-Torres 
-   GIT 337 */
+/* Author: Sebastian Meza-Torres 
+   Course: GIT 337 */
 
 
 
@@ -46,8 +46,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
-    background-color: #484FB7;
-    margin: 0 auto;
+    
 
     
 }
@@ -83,6 +82,23 @@ table {
 }
 
 /* ---------- GLOBAL STYLES ---------- */
+
+html {
+    background-color: #484FB7;
+}
+
+head {
+    display: none;
+}
+
+
+body {
+    margin: 0 auto;
+    display: grid;
+    
+    
+}
+
 
 h1, h2 {
     font-family: 'Kavoon';
@@ -140,20 +156,17 @@ nav a {
     color: black;
     padding: 10px 15px;
     font-size: 15px;
+    
 }
 
-header, h1 {
-text-align: center;
-margin: 0;
 
-
-}
 
 header {
     background-color: #6B8FE7;
     padding: 20px;
     border-radius: 23px;
     height: 150px;
+    text-align: center;
 
     
 }
@@ -162,7 +175,7 @@ header p {
     color: white;
     background-color: #D9526F;
     margin: 0px;
-    
+
     
 }
 
@@ -177,6 +190,7 @@ footer {
     margin: 15px;
     background-color: #6B8FE7;
     border-radius: 23px;
+    
     
     
 }
@@ -250,7 +264,8 @@ ul {
     background-color: #D9526F;
     color: white;
     border-radius: 15px;
-    
+    padding: 25px;
+    display: grid;
 }
 
 
@@ -264,6 +279,8 @@ td:nth-child(odd) {
 
 }
 
+
+
 td {
     background-color: #ffffff;
 }
@@ -274,8 +291,9 @@ table, td {
 
 #pricing {
     display: flex;
-    flex-direction: row;
+
 }
+
 
 /* For the our services section */
 #our-services {
@@ -286,9 +304,7 @@ table, td {
 
 #one-on-one {
     display: grid;
-    
-    
-    
+
     
 }
 
@@ -296,53 +312,192 @@ table, td {
     display: grid;
     grid-row: 4;
     
-    
+
 }
 
 #group-coaching {
     display: grid;
-    grid-column: 2;
-    
-
-    
     
 }
 
 #workshop-seminars {
     display: grid;
+    
 
-    
-    
 }
 
 #online-courses {
     display: grid;
 
-    
 
 }
 
+#schedule-now {
+    background-color: #ffffff;
+    border-radius: 18px;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    float: right;
+    text-decoration: none;
+    color: black;
 
+    
+}
 
-
-
-
-
-
-
-
-
+a[href$="now"] {
+    color: white;
+    padding: 50px;
+}
 
 
 
 /* --------- Small - min-width: 450px Media Query ---------- */
 
+@media screen and (max-width:450px) {
+
+    html {
+        text-align: center;
+        align-items: center;
+    }
+
+    head {
+        display: none;
+    }
+    
+    body {
+        text-align: center;
+    }
+
+    
+
+    header {
+        text-align: center;
+        padding: 4px;
+        
+    }
+
+    header p {
+        text-align: center;
+        border-radius: 15px;
+        
+    }
+
+    nav h2 {
+        visibility: visible;
+        color: #000000;
+    
+    }
+
+    nav a {
+        visibility: collapse;
+
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+    }
+
+    nav {
+        display: grid;
+    }
+
+    main {
+        text-align: center;
+        
+    }
+
+    #our-services {
+        text-align: center;
+        display: block;
+    }
+
+    #one-on-one {
+        text-align: center;
+        align-items: center;
+        
+
+    }
+
+    #group-coaching {
+        text-align: center;
+
+    }
+
+    #workshop-seminar {
+
+        text-align: center;
+
+    }
+
+    #online-course {
+
+        text-align: center;
+
+    }
+
+    .card {
+        padding: 3px;
+        margin: 7px;
+        width: 260px;
+    }
+
+    #why-choose-us {
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #pricing {
+        display: grid;
+        
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    #first-step {
+        padding: 4px;
+        margin: 4px;
+        border-radius: 10px;
+    }
+
+    #schedule-now {
+        display: grid;
+        float: left;
+
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    
+
+    
+}
+
 
 /* ---------- Medium - min-width: 620px Media Query --------- */
 
+@media screen and (max-width:620px) {
+
+}
+
 /* ---------- Large - min-width: 950px Media Query ---------- */
+
+@media screen and (max-width:950px) {
+
+}
 
 /* ---------- XL - min-width: 1280px Media Query ----------- */
 
+@media screen and (max-width:1280px) {
 
+}
 
