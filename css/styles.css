@@ -356,9 +356,10 @@ a[href$="now"] {
 
 /* ------------ Small - min-width: 450px Media Query ------------------- */
 
-@media screen and (max-width:450px) {
+@media screen and (min-width:450px) {
     html {
         text-align: center;
+        align-items: center;
     }
 
     head {
@@ -376,7 +377,7 @@ a[href$="now"] {
 
     header p {
         text-align: center;
-        border-radius: 15px;
+        padding: 4px;
     }
 
     nav h2 {
@@ -392,14 +393,11 @@ a[href$="now"] {
         position: absolute;
         top: 0;
         right: 0;
-        
     }
 
     nav {
         display: grid;
-    
     }
-
 
     main {
         text-align: center;
@@ -410,99 +408,127 @@ a[href$="now"] {
         display: block;
     }
 
+
     #one-on-one {
         text-align: center;
         align-items: center;
+        display: inline-block;
     }
 
     #group-coaching {
         text-align: center;
+        display: inline-block;
+        
     }
 
     #workshop-seminar {
         text-align: center;
+        display: inline-block;
     }
 
     #online-course {
         text-align: center;
+        display: inline-block;
     }
 
     .card {
         padding: 3px;
-        margin: 7px;
-        width: 260px;
+        margin: 10px;
+        width: 360px;
+    
+        
     }
 
-    #why-choose-us {
+     #pricing {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-    }
+     }
 
-    #pricing {
-        display: grid;
-    }
-
-    table {
+     table {
         margin: 0 auto;
-    }
+     }
+
 
     #first-step {
         padding: 4px;
         margin: 4px;
-        border-radius: 10px;
-    }
+        border-radius: 4px;
+     }
 
-    #schedule-now {
+     #schedule-now {
         display: grid;
-        float: left;
+        text-align: center;
+     }
+
+     footer {
+        text-align: center;
+     }
+
+
     }
 
-    footer {
-        text-align: center;
-    }
-}
+    
+
     
 /* ---------- Medium - min-width: 620px Media Query --------- */
     
+    @media screen and (min-width:620px) {
+        head {
+            display: none;
+        }
 
-@media screen and (max-width:620px) {
-    head {
-        display: none;
+        header {
+            text-align: center;
+            padding: 5px;
+        }
+
+        header p {
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        nav h2 {
+            visibility: visible;
+            color: #000000;
+        }
+
+        nav a {
+            visibility: collapse;
+        }
+
+        nav ul {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        nav {
+            display: grid;
+        }
+
+        #our-services {
+            text-align: left;
+            display: block;
+        
+        }
+
+        .service-type {
+
+            display: grid;
+
+
+        }
+
+        #one-on-one {
+            display: grid;
+        
+        }
+
+        
+
+
+        
     }
 
-    header {
-        text-align: center;
-        padding: 5px;
-    }
-    
-    nav h2 {
-        visibility: visible;
-        color: #000000
-    }
-
-    nav a {
-        visibility: collapse;
-    }
-
-    nav ul {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    nav {
-        display: grid;
-    }
-
-    #our-services {
-        display: block;
-    }
-
-    #one-on-one {
-        display: flex;
-    }
-}
     
 
 
