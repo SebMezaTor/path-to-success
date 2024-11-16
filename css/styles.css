@@ -466,9 +466,6 @@ a[href$="now"] {
 
     }
 
-    
-
-    
 /* ---------- Medium - min-width: 620px Media Query --------- */
     
     @media screen and (min-width:620px) {
@@ -518,39 +515,156 @@ a[href$="now"] {
 
         }
 
+        /* Added a class for the relationship card to change its width to closely match the mockup. */
+
+        .relationship {
+            width: 90%;
+        }
+
+        .interactive {
+            width: 90%;
+        }
+
+        .flexible {
+            width: 90%;
+
+        }
+
+        .personal {
+            display: grid;
+            
+        }
+
+
         #one-on-one {
             display: grid;
+            
         
+        }
+
+        #group-coaching {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        
+        }
+
+        #pricing {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row: auto;
+
         }
 
         
 
+        #first-step, #schedule-now {
+            text-align: center;
+            align-items: center;
+
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        
+    }  
+
+/* ---------- Large - min-width: 950px Media Query ---------- */
+    @media screen and (min-width:950px) {
+        
+        body {
+            display: grid;
+        }
+        
+        head {
+            display: none;
+        }
+
+        
+
+        header {
+            text-align: center;
+            padding: 5px;
+        }
+
+        header p {
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        nav h2 {
+            visibility: hidden;
+        }
+
+        nav a {
+            visibility: visible;
+        }
+
+        nav ul {
+            position: absolute;
+            display: flex;
+            float: right;
+            flex-direction: row;
+            
+        }
+
+        nav {
+            top: 0;
+            right: 0;
+            display: grid;
+            margin-bottom: 10px;
+            width: 400px
+        }
+
+        #our-services {
+            display: grid
+        }
+
+        .personal {
+            width: 250px;
+        }
+
+        .interactive {
+            width: 250px;
+    
+        }
+
+        .flexible {
+            width: 250px;
+        }
+
+        .career {
+            width: 250px;
+        }
+
+        .focused {
+            width: 250px;
+        }
+
+        .supportive {
+            width: 250px;
+        }
+
+        #group-coaching {
+            display: block;
+        }
+
+        #why-choose-us {
+            text-align: left;
+        }
+
+        #pricing {
+            display: flex;
+            flex-direction: row;
+        }
+
+        footer {
+            text-align: center;
+        }
 
         
     }
-
-    
-
-
-    
-
-
-
-  
-
-        
-   
-
-/* ---------- Large - min-width: 950px Media Query ---------- */
-
-
-
-
-    
-    
-
-    
-    
 
 /* ---------- XL - min-width: 1280px Media Query ----------- */
 
