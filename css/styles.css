@@ -95,6 +95,7 @@ head {
 body {
     margin: 0 auto;
     display: grid;
+    font-family: 'Inter';
     
     
 }
@@ -477,15 +478,146 @@ a[href$="now"] {
         text-align: center;
     }
 
-    
-
-    
 }
 
 
 /* ---------- Medium - min-width: 620px Media Query --------- */
 
 @media screen and (max-width:620px) {
+    html {
+        text-align: center;
+    }
+
+    head {
+        display: none;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    header {
+        text-align: center;
+        padding: 5px;
+    }
+
+    header p {
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    nav h2 {
+        visibility: visible;
+        color: #000000;
+    }
+
+    nav a {
+        visibility: collapse;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    nav {
+        display: grid;
+    }
+
+    main {
+        text-align: center;
+        
+    }
+
+    #our-services {
+        text-align: left;
+        display: block;
+
+
+    }
+
+    #one-on-one {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #group-coaching {
+    
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        
+    }
+
+
+    #workshop-seminar {
+
+        text-align: center;
+
+    }
+
+    #online-course {
+
+        text-align: center;
+
+    }
+
+    .card {
+
+        padding: 3px;
+        margin: 7px;
+        width: 260px;
+        
+    
+    }
+
+
+
+    #why-choose-us {
+        padding: 15px;
+        margin: 10px;
+
+    }
+
+
+    #pricing {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+
+        
+    }
+    
+    table {
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        
+    
+
+    }
+
+    #first-step {
+        text-align: center;
+
+    }
+
+    #schedule-now {
+
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        float: left;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    
 
 }
 
