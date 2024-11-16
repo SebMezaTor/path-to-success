@@ -356,345 +356,41 @@ a[href$="now"] {
 
 /* --------- Small - min-width: 450px Media Query ---------- */
 
-@media screen and (max-width:450px) {
-
-    html {
-        text-align: center;
-        align-items: center;
-    }
-
-    head {
-        display: none;
-    }
-    
-    body {
-        text-align: center;
-    }
 
     
-
-    header {
-        text-align: center;
-        padding: 4px;
         
-    }
 
-    header p {
-        text-align: center;
-        border-radius: 15px;
-        
-    }
 
-    nav h2 {
-        visibility: visible;
-        color: #000000;
     
-    }
-
-    nav a {
-        visibility: collapse;
-
-    }
-
-    nav ul {
-        position: absolute;
-        top: 0;
-        right: 0;
-        
-    }
-
-    nav {
-        display: grid;
-    }
-
-    main {
-        text-align: center;
-        
-    }
-
-    #our-services {
-        text-align: center;
-        display: block;
-    }
-
-    #one-on-one {
-        text-align: center;
-        align-items: center;
-        
-
-    }
-
-    #group-coaching {
-        text-align: center;
-
-    }
-
-    #workshop-seminar {
-
-        text-align: center;
-
-    }
-
-    #online-course {
-
-        text-align: center;
-
-    }
-
-    .card {
-        padding: 3px;
-        margin: 7px;
-        width: 260px;
-    }
-
-    #why-choose-us {
-        display: grid;
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    #pricing {
-        display: grid;
-        
-    }
-
-    table {
-        margin: 0 auto;
-    }
-
-    #first-step {
-        padding: 4px;
-        margin: 4px;
-        border-radius: 10px;
-    }
-
-    #schedule-now {
-        display: grid;
-        float: left;
-
-    }
-
-    footer {
-        text-align: center;
-    }
-
-}
 
 
 /* ---------- Medium - min-width: 620px Media Query --------- */
 
-@media screen and (max-width:620px) {
-    html {
-        text-align: center;
-    }
 
-    head {
-        display: none;
-    }
-
-    body {
-        text-align: center;
-    }
-
-    header {
-        text-align: center;
-        padding: 5px;
-    }
-
-    header p {
-        text-align: center;
-        border-radius: 15px;
-    }
-
-    nav h2 {
-        visibility: visible;
-        color: #000000;
-    }
-
-    nav a {
-        visibility: collapse;
-    }
-
-    nav ul {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    nav {
-        display: grid;
-    }
-
-    main {
-        text-align: center;
-        
-    }
-
-    #our-services {
-        text-align: left;
-        display: block;
-
-
-    }
-
-    #one-on-one {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    #group-coaching {
-    
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        
-    }
-
-
-    #workshop-seminar {
-
-        text-align: center;
-
-    }
-
-    #online-course {
-
-        text-align: center;
-
-    }
-
-    .card {
-
-        padding: 3px;
-        margin: 7px;
-        width: 260px;
-        
-    
-    }
-
-
-
-    #why-choose-us {
-        padding: 15px;
-        margin: 10px;
-
-    }
-
-
-    #pricing {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,auto);
-
-        
-    }
-    
-    table {
-        text-align: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        
-    
-
-    }
-
-    #first-step {
-        text-align: center;
-
-    }
-
-    #schedule-now {
-
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        float: left;
-    }
-
-    footer {
-        text-align: center;
-    }
 
     
 
-}
+
+    
+
+
+
+  
+
+        
+   
 
 /* ---------- Large - min-width: 950px Media Query ---------- */
 
-@media screen and (max-width:950px) {
-    html {
-        text-align: center;
 
-    }
 
-    head {
-        display: none;
-    }
-
-    body {
-        text-align: center;
-    }
-
-    header {
-        text-align: center;
-        padding: 5px;
-        
-    
-    }
-
-    header p {
-        text-align: center;
-        border-radius: 15px;
-        
-    }
-
-    nav h2 {
-        visibility: hidden;
-        color: #000000;
-    
-    }
-
-    nav a {
-        color: #000000;
-        
-    
-    }
-
-    nav ul {
-        
-        gap: 15px;
-        display: flex;
-        float: right;
-        flex-direction: row;
-        width: 100%;
-        justify-content: flex-end;
-    
-        
-    }
-
-    nav {
-        top: 0;
-        width: 60%;
-        display: flex;
-        margin-bottom: 10px;
-        
-    }
 
     
-
-    main {
-        text-align: center;
-    }
-
     
 
-}
+    
+    
 
 /* ---------- XL - min-width: 1280px Media Query ----------- */
 
-@media screen and (max-width:1280px) {
-
-}
 
