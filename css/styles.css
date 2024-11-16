@@ -624,6 +624,71 @@ a[href$="now"] {
 /* ---------- Large - min-width: 950px Media Query ---------- */
 
 @media screen and (max-width:950px) {
+    html {
+        text-align: center;
+
+    }
+
+    head {
+        display: none;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    header {
+        text-align: center;
+        padding: 5px;
+        
+    
+    }
+
+    header p {
+        text-align: center;
+        border-radius: 15px;
+        
+    }
+
+    nav h2 {
+        visibility: hidden;
+        color: #000000;
+    
+    }
+
+    nav a {
+        color: #000000;
+        
+    
+    }
+
+    nav ul {
+        
+        gap: 15px;
+        display: flex;
+        float: right;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+    
+        
+    }
+
+    nav {
+        top: 0;
+        width: 60%;
+        display: flex;
+        margin-bottom: 10px;
+        
+    }
+
+    
+
+    main {
+        text-align: center;
+    }
+
+    
 
 }
 
