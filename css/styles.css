@@ -618,7 +618,7 @@ a[href$="now"] {
         }
 
         #our-services {
-            display: grid
+            display: grid;
         }
 
         .personal {
@@ -667,5 +667,73 @@ a[href$="now"] {
     }
 
 /* ---------- XL - min-width: 1280px Media Query ----------- */
+    @media screen and (min-width:1280px) {
+        body {
+            display: grid;
+        }
 
+        head {
+            display: none;
+        }
+
+        header {
+            text-align: center;
+            padding: 5px;
+        }
+
+        nav h2 {
+            visibility: hidden;
+        }
+
+        #our-services {
+            display: grid;
+
+        }
+
+        .personal {
+            width: 250px;
+        }
+
+        .interactive {
+            width: 250px;
+        }
+
+        .flexible {
+            width: 250px;
+        }
+
+        .career {
+            width: 250px;
+        }
+
+        .focused {
+            width: 250px;
+        }
+
+        .supportive {
+            width: 250px;
+        }
+
+        .relationship {
+            width: 250px;
+        }
+
+        #group-coaching {
+            display: block;
+        }
+
+        #pricing {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #schedule-now {
+            text-align: center;
+            align-items: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+    }
 
