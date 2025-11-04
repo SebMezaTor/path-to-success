@@ -1,739 +1,527 @@
-/* ---------- CSS BY NAME -----------*/
+/* ----------------------- CSS BY NAME ------------------------- */
 /* Author: Sebastian Meza-Torres 
-   Course: GIT 337 */
+   Course: GIT337 */
 
+/* ----------------------- IMPORTED FONTS ------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap");
 
-
-
-
-
-/* ----------- IMPORTED FONTS ----------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
-
-
-/* ----------- CSS RESET ----------- */
-
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
+/* ------------------------- CSS RESET ---------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-    line-height: 1;
-    
-
-    
+  line-height: 1;
 }
-
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
-
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* ---------- ROOT VARIABLES ---------- */
-
+/* ----------------------- ROOT VARIABLES ------------------------- */
 :root {
-    font-family: "Habibi", serif;
-    font-size: 1.25em;
-    --green:#06A816;
-    --orange:#E75D02;
-    --black:#000000;
-    --white:#ffffff;
+  --teal: #4ca7c0;
+  --purple: #484fb7;
+  --lavender: #6b8fe7;
+  --yellow: #e9bb57;
+  --pink: #d9526f;
+  --dark-gray: #1e1e1e;
+  --white: #ffffff;
 }
 
-/* ---------- GLOBAL STYLES ---------- */
-
+/* -------------- GLOBAL STYLES (mobile first/small) -------------- */
 html {
-    background-color: #484FB7;
+  background-color: var(--purple);
 }
 
-head {
-    display: none;
+h1,
+h2 {
+  font-family: Kavoon;
 }
 
-
-body {
-    margin: 0 auto;
-    display: grid;
-    font-family: 'Inter';
-    
-    
-}
-
-
-h1, h2 {
-    font-family: 'Kavoon';
-    color: #ffffff
+p,
+h3,
+h4,
+nav h2,
+li,
+table,
+#first-step a,
+small {
+  font-family: Inter;
 }
 
 h1 {
-    font-size: 3em;
+  font-size: 3em;
+}
+
+nav h2,
+h3 {
+  font-size: 1.5em;
 }
 
 h2 {
-    font-size: 2em;
-    padding: 10px;
-}
-
-h3 {
-    font-size: 1.5em;
-    color: #E9BB57;
-    display: inline-block;
-    padding: 10px;
-    
-    
+  font-size: 2em;
 }
 
 h4 {
-    font-size: 1.15em;
-    /* Note to myself: I made this h4 tag white so I can see where it is when I begin making the card for the personal development. I will change it to its correct color when I am finished. */
-    color: #ffffff
-
-
+  font-size: 1.15em;
 }
-
-nav h2 {
-    visibility: hidden;
-    font-size: 1.5em;
-}
-
-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #E9BB57;
-    border-radius: 15px;
-    
-}
-
-nav ul {
-    display: flex;
-    gap: 15px;
-    list-style-type: none;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 15px;
-    font-size: 15px;
-    
-}
-
-
 
 header {
-    background-color: #6B8FE7;
-    padding: 20px;
-    border-radius: 23px;
-    height: 150px;
-    text-align: center;
+  color: var(--white);
+  text-align: center;
+}
 
-    
+header h1 {
+  background-color: var(--lavender);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  padding: 70px 0 40px 0;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
 header p {
-    color: white;
-    background-color: #D9526F;
-    margin: 0px;
-
-    
+  background-color: var(--pink);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  max-width: 97%;
+  margin: auto auto 50px auto;
+  position: relative;
+  padding: 180px 0 5px 0;
+  font-style: italic;
+  color: transparent;
+  z-index: 1;
 }
 
-table, th, td {
-    border: 1px solid;
+header p::before {
+  content: "Unlock your full potential";
+  visibility: visible;
+  position: absolute;
+  color: var(--white);
+  text-align: center;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+}
+
+nav ul {
+  display: none;
+}
+
+nav h2 {
+  color: var(--dark-gray);
+  background-color: var(--yellow);
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+nav h2:hover {
+  color: var(--white);
+}
+
+main {
+  line-height: 25px;
+}
+
+#services,
+#pricing {
+  margin: 10px;
+}
+
+h2 {
+  color: var(--white);
+  margin: 0 0 10px 0;
+}
+
+h3 {
+  color: var(--yellow);
+  font-weight: bold;
+}
+
+.service {
+  background-color: var(--white);
+  margin: 15px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+h4 {
+  color: var(--purple);
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+#choose-us,
+#first-step {
+  background-color: var(--pink);
+  padding: 15px;
+}
+
+#choose-us ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#choose-us ul li {
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+#choose-us ul li:nth-child(1) {
+  background-color: var(--teal);
+  margin: 0 7.5px 7.5px 0;
+}
+
+#choose-us ul li:nth-child(2) {
+  background-color: var(--lavender);
+  margin: 0 0 7.5px 7.5px;
+}
+
+#choose-us ul li:nth-child(3) {
+  background-color: var(--yellow);
+  margin: 7.5px 7.5px 0 0;
+}
+
+#choose-us ul li:nth-child(4) {
+  background-color: var(--white);
+  margin: 7.5px 0 0 7.5px;
+}
+
+table {
+  margin: 10px auto 10px auto;
+}
+
+table,
+th,
+td {
+  border: 2px solid var(--yellow);
+  padding: 10px;
+}
+
+th {
+  background-color: var(--yellow);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+td {
+  background-color: var(--white);
+}
+
+#first-step p {
+  color: var(--white);
+}
+
+#first-step a {
+  background-color: var(--white);
+  display: block;
+  max-width: 85%;
+  margin: 10px auto auto auto;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px var(--dark-gray);
+}
+
+#first-step a:visited {
+  color: black;
+  text-decoration: none;
 }
 
 footer {
-    text-align: center;
-    color: white;
-    padding: 25px;
-    margin: 15px;
-    background-color: #6B8FE7;
-    border-radius: 23px;
-    
-    
-    
+  background-color: var(--lavender);
+  margin-bottom: 50px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  font-size: smaller;
+  color: var(--white);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
-.card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    width: 250px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: left;
-    margin: 20px;
+footer a:visited {
+  color: var(--white);
+}
+
+/* --------------------- MEDIA QUERY (medium) --------------------- */
+@media screen and (min-width: 620px) {
+  header p {
+    color: var(--white);
+  }
+
+  header p::before {
+    visibility: hidden;
+  }
+
+  #one-on-one,
+  #group-coaching,
+  #workshops,
+  #online-courses {
     display: grid;
-    
-    
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #one-on-one h3,
+  #one-on-one .service:nth-of-type(3),
+  #group-coaching h3,
+  #workshops .service,
+  #online-courses .service {
+    grid-column: 1/3;
+  }
+
+  #choose-us ul {
+    grid-template-columns: 1.25fr 1fr 1.25fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  #choose-us ul li:nth-child(1),
+  #choose-us ul li:nth-child(2),
+  #choose-us ul li:nth-child(3),
+  #choose-us ul li:nth-child(4) {
+    margin: 5px;
+  }
+
+  #pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #pricing h2 {
+    grid-column: 1/3;
+  }
+
+  #first-step {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #first-step h2 {
+    grid-column: 1/3;
+  }
+
+  #first-step a {
+    width: 100%;
+  }
 }
 
+/* --------------------- MEDIA QUERY (large) ---------------------- */
+@media screen and (min-width: 950px) {
+  nav h2 {
+    display: none;
+  }
 
-
-.card-icon {
-    margin-bottom: 5px;
-}
-
-.card-title {
-    color: #484FB7;
-
-}
-
-.why-choose-us {
-    background-color: #D9526F;
+  nav ul {
+    display: grid;
+    background-color: var(--yellow);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
     padding: 15px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-
-}
-/* Why choose us listed items */
- #approach {
-    background-color: #4CA7C0;
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-#proven-results {
-    background-color: #6B8FE7;
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-#supportive {
-    background-color: #E9BB57;
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-#flexible {
-    background-color: #ffffff;
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-.first-step {
-    background-color: #D9526F;
-    color: white;
-    border-radius: 15px;
-    padding: 25px;
-    display: grid;
-}
-
-
-
-th {
-    background-color: #E9BB57;
-}
-
-td:nth-child(odd) {
-    border-bottom: 1px solid #E9BB57;
-
-}
-
-
-
-td {
-    background-color: #ffffff;
-}
-
-table, td {
-    border: 1px solid #E9BB57;
-}
-
-#pricing {
-    display: flex;
-
-}
-
-
-/* For the our services section */
-#our-services {
-    display: grid;
-
-    
-}
-
-#one-on-one {
-    display: grid;
-
-    
-}
-
-.service-type {
-    display: grid;
-    grid-row: 4;
-    
-
-}
-
-#group-coaching {
-    display: grid;
-    
-}
-
-#workshop-seminars {
-    display: grid;
-    
-
-}
-
-#online-courses {
-    display: grid;
-
-
-}
-
-#schedule-now {
-    background-color: #ffffff;
-    border-radius: 18px;
-    width: 250px;
-    padding: 10px;
-    box-shadow: 2px 10px rgba(0,0,0,0.1);
     text-align: center;
-    float: right;
-    text-decoration: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: bold;
+  }
+
+  nav a {
+    text-transform: uppercase;
     color: black;
+    text-decoration: none;
+  }
 
-    
+  nav a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: var(--white);
+  }
+
+  #services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #one-on-one,
+  #group-coaching,
+  #workshops,
+  #online-courses {
+    display: block;
+  }
+
+  #services h2 {
+    grid-column: 1/5;
+  }
+
+  #services h3 {
+    text-align: center;
+  }
+
+  #choose-us ul li {
+    padding: 30px;
+  }
+
+  #pricing {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 6fr;
+  }
+
+  #pricing h2 {
+    grid-column: 1/5;
+  }
+
+  #first-step a {
+    width: 50%;
+  }
 }
 
-a[href$="now"] {
-    color: white;
-    padding: 50px;
+/* ---------------------- MEDIA QUERY (xl) ------------------------ */
+@media screen and (min-width: 1280px) {
+  body,
+  h1 {
+    max-width: 1280px;
+    margin: auto;
+  }
 }
-
-
-
-/* ------------ Small - min-width: 450px Media Query ------------------- */
-
-@media screen and (min-width:450px) {
-    html {
-        text-align: center;
-        align-items: center;
-    }
-
-    head {
-        display: none;
-    }
-
-    body {
-        text-align: center;
-    }
-
-    header {
-        text-align: center;
-        padding: 4px;
-    }
-
-    header p {
-        text-align: center;
-        padding: 4px;
-    }
-
-    nav h2 {
-        visibility: visible;
-        color: #000000;
-    }
-
-    nav a {
-        visibility: collapse;
-    }
-
-    nav ul {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    nav {
-        display: grid;
-    }
-
-    main {
-        text-align: center;
-    }
-
-    #our-services {
-        text-align: center;
-        display: block;
-    }
-
-
-    #one-on-one {
-        text-align: center;
-        align-items: center;
-        display: inline-block;
-    }
-
-    #group-coaching {
-        text-align: center;
-        display: inline-block;
-        
-    }
-
-    #workshop-seminar {
-        text-align: center;
-        display: inline-block;
-    }
-
-    #online-course {
-        text-align: center;
-        display: inline-block;
-    }
-
-    .card {
-        padding: 3px;
-        margin: 10px;
-        width: 360px;
-    
-        
-    }
-
-     #pricing {
-        display: grid;
-     }
-
-     table {
-        margin: 0 auto;
-     }
-
-
-    #first-step {
-        padding: 4px;
-        margin: 4px;
-        border-radius: 4px;
-     }
-
-     #schedule-now {
-        display: grid;
-        text-align: center;
-     }
-
-     footer {
-        text-align: center;
-     }
-
-
-    }
-
-/* ---------- Medium - min-width: 620px Media Query --------- */
-    
-    @media screen and (min-width:620px) {
-        head {
-            display: none;
-        }
-
-        header {
-            text-align: center;
-            padding: 5px;
-        }
-
-        header p {
-            text-align: center;
-            border-radius: 15px;
-        }
-
-        nav h2 {
-            visibility: visible;
-            color: #000000;
-        }
-
-        nav a {
-            visibility: collapse;
-        }
-
-        nav ul {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        nav {
-            display: grid;
-        }
-
-        #our-services {
-            text-align: left;
-            display: block;
-        
-        }
-
-        .service-type {
-
-            display: grid;
-
-
-        }
-
-        /* Added a class for the relationship card to change its width to closely match the mockup. */
-
-        .relationship {
-            width: 90%;
-        }
-
-        .interactive {
-            width: 90%;
-        }
-
-        .flexible {
-            width: 90%;
-
-        }
-
-        .personal {
-            display: grid;
-            
-        }
-
-
-        #one-on-one {
-            display: grid;
-            
-        
-        }
-
-        #group-coaching {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-        
-        }
-
-        #pricing {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-row: auto;
-
-        }
-
-        
-
-        #first-step, #schedule-now {
-            text-align: center;
-            align-items: center;
-
-        }
-
-        footer {
-            text-align: center;
-        }
-
-        
-    }  
-
-/* ---------- Large - min-width: 950px Media Query ---------- */
-    @media screen and (min-width:950px) {
-        
-        body {
-            display: grid;
-        }
-        
-        head {
-            display: none;
-        }
-
-        
-
-        header {
-            text-align: center;
-            padding: 5px;
-        }
-
-        header p {
-            text-align: center;
-            border-radius: 15px;
-        }
-
-        nav h2 {
-            visibility: hidden;
-        }
-
-        nav a {
-            visibility: visible;
-        }
-
-        nav ul {
-            position: absolute;
-            display: flex;
-            float: right;
-            flex-direction: row;
-            
-        }
-
-        nav {
-            top: 0;
-            right: 0;
-            display: grid;
-            margin-bottom: 10px;
-            width: 400px
-        }
-
-        #our-services {
-            display: grid;
-        }
-
-        .personal {
-            width: 250px;
-        }
-
-        .interactive {
-            width: 250px;
-    
-        }
-
-        .flexible {
-            width: 250px;
-        }
-
-        .career {
-            width: 250px;
-        }
-
-        .focused {
-            width: 250px;
-        }
-
-        .supportive {
-            width: 250px;
-        }
-
-        #group-coaching {
-            display: block;
-        }
-
-        #why-choose-us {
-            text-align: left;
-        }
-
-        #pricing {
-            display: flex;
-            flex-direction: row;
-        }
-
-        footer {
-            text-align: center;
-        }
-
-        
-    }
-
-/* ---------- XL - min-width: 1280px Media Query ----------- */
-    @media screen and (min-width:1280px) {
-        body {
-            display: grid;
-        }
-
-        head {
-            display: none;
-        }
-
-        header {
-            text-align: center;
-            padding: 5px;
-        }
-
-        nav h2 {
-            visibility: hidden;
-        }
-
-        #our-services {
-            display: grid;
-
-        }
-
-        .personal {
-            width: 250px;
-        }
-
-        .interactive {
-            width: 250px;
-        }
-
-        .flexible {
-            width: 250px;
-        }
-
-        .career {
-            width: 250px;
-        }
-
-        .focused {
-            width: 250px;
-        }
-
-        .supportive {
-            width: 250px;
-        }
-
-        .relationship {
-            width: 250px;
-        }
-
-        #group-coaching {
-            display: block;
-        }
-
-        #pricing {
-            display: flex;
-            flex-direction: row;
-        }
-
-        #schedule-now {
-            text-align: center;
-            align-items: center;
-        }
-
-        footer {
-            text-align: center;
-        }
-    }
-
