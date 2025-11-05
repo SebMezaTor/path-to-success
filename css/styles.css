@@ -147,7 +147,7 @@ table {
   --white: #ffffff;
 }
 
-/* -------------- GLOBAL STYLES (mobile first/small) -------------- */
+/* -------------- GLOBAL STYLES (Mobile First/Small) -------------- */
 html {
   background-color: var(--purple);
 }
@@ -382,7 +382,7 @@ footer a:visited {
   color: var(--white);
 }
 
-/* --------------------- MEDIA QUERY (medium) --------------------- */
+/* --------------------- Medium Screen Media Query --------------------- */
 @media screen and (min-width: 620px) {
   header p {
     color: var(--white);
@@ -443,7 +443,7 @@ footer a:visited {
   }
 }
 
-/* --------------------- MEDIA QUERY (large) ---------------------- */
+/* --------------------- Large Media Query ---------------------- */
 @media screen and (min-width: 950px) {
   nav h2 {
     display: none;
@@ -517,7 +517,7 @@ footer a:visited {
   }
 }
 
-/* ---------------------- MEDIA QUERY (xl) ------------------------ */
+/* ---------------------- Xtra Large Media Query ------------------------ */
 @media screen and (min-width: 1280px) {
   body,
   h1 {
